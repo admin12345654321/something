@@ -1,0 +1,28 @@
+.auth {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .auth__btns {
+    margin-top: -10rem;
+
+    .btn {
+      color: #111;
+      outline: none;
+      border: none;
+      background-color: #56cbf9;
+      padding: 8px 10px;
+    }
+
+    .btn:first-child {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .btn:last-child {
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+}

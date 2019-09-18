@@ -1,0 +1,28 @@
+$mainBlue: #56cbf9;
+
+.header {
+  background-color: $mainBlue;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: 60px;
+
+  .header__placeholder {
+    flex: 1;
+  }
+
+  .header__nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+
+    .header__nav-item {
+      margin-left: 1rem;
+    }
+
+    .header__nav-link {
+      color: #111;
+      text-decoration: none;
+    }
+  }
+}
