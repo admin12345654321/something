@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import "./SignInUp.scss";
 
-const SignIn = ({ repeatPass, txt }) => {
+const SignIn = ({ isSignedUp }) => {
   return (
     <Fragment>
       <form className="form">
@@ -17,7 +17,7 @@ const SignIn = ({ repeatPass, txt }) => {
           name="password"
           className="input-item"
         />
-        {repeatPass && (
+        {isSignedUp && (
           <input
             type="password"
             placeholder="Repeat password"
@@ -26,7 +26,7 @@ const SignIn = ({ repeatPass, txt }) => {
           />
         )}
         <button type="button" className="input-btn">
-          {txt}
+          {(isSignedUp && "sign up") || "log in"}
         </button>
       </form>
     </Fragment>
