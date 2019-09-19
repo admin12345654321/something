@@ -1,0 +1,5 @@
+@mixin position($pos, $top, $left) {
+  position: $pos;
+  top: $top;
+  left: $left;
+}

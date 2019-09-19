@@ -1,13 +1,13 @@
-import React from "react";
-import Toolbar from "./Toolbar/Toolbar";
+import React, { Fragment } from "react"
+import "./Layout.scss"
 
-const Layout = ({ children }) => {
-  return (
-    <div>
-      <Toolbar />
-      <section className="auth">{children}</section>
-    </div>
-  );
-};
+import Toolbar from "./Toolbar/Toolbar"
 
-export default Layout;
+const Layout = ({ children }) => (
+  <Fragment>
+    <Toolbar />
+    <section className='layout'>{children}</section>
+  </Fragment>
+)
+
+export default Layout

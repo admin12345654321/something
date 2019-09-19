@@ -1,0 +1,45 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.auth__btns {
+  margin-top: -10rem;
+  @include position(absolute, 50%, 50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  .btn {
+    color: $text-color;
+    outline: none;
+    border: none;
+    background-color: $main-blue;
+    padding: 8px 10px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: $element-transition;
+
+    &:hover {
+      background-color: $hover-blue;
+    }
+
+    &.active {
+      background-color: $hover-blue;
+    }
+  }
+
+  .btn:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .btn:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 2px;
+  }
+}
+
+.form-control {
+  width: 700px;
+  @include position(absolute, 50%, 50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
