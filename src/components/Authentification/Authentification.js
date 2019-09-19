@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/Authentification.scss";
 
-import SignIn from "./SignIn";
-import SignUp from "./SignUp";
+import SignInUp from "./SignInUp";
 
 const Authentification = () => {
   const [activeComponent, setActiveComponent] = useState(1);
@@ -10,9 +9,9 @@ const Authentification = () => {
   const currentComponent = () => {
     switch (activeComponent) {
       case 1:
-        return <SignIn />;
+        return <SignInUp repeatPass={false} txt="Sign In" />;
       case 2:
-        return <SignUp />;
+        return <SignInUp repeatPass={true} txt="Sign Up" />;
       default:
         break;
     }
@@ -28,7 +27,7 @@ const Authentification = () => {
           Sign Up
         </button>
       </div>
-      {currentComponent()}
+      <div className="form-control">{currentComponent()}</div>
     </section>
   );
 };
