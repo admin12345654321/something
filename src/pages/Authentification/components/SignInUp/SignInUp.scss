@@ -1,3 +1,6 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
 .form {
   width: 100%;
   margin: 0 auto;
@@ -5,6 +8,7 @@
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  font-family: $font-roboto;
 
   .input-item,
   .input-btn {
@@ -12,7 +16,7 @@
     margin: 0.3rem auto;
     padding: 0.7rem;
     font-size: 1.2rem;
-    background-color: #fff;
+    background-color: $text-color;
     border: none;
     border-radius: 3px;
 
@@ -22,13 +26,13 @@
   }
 
   .input-btn {
-    background-color: #56cbf9;
+    background-color: $main-blue;
     cursor: pointer;
     color: #fff;
-    transition: all 0.3s ease-out;
+    transition: $element-transition;
 
     &:hover {
-      background-color: #20bbf8;
+      background-color: $hover-blue;
     }
   }
 }
