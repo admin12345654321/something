@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./Authentification.scss"
 
-import SignInUp from "../../components/SignInUp"
+import SignInUp from "./components/SignInUp"
 import Layout from "../../components/Layout"
 
 const Authentification = () => {

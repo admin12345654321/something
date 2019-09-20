@@ -1,7 +1,7 @@
 import React from "react"
 import { Route, Switch } from "react-router-dom"
 
-import Authentification from "./pages/AuthentificationPage"
+import Authentification from "./pages/Authentification"
 import ErrorPage from "./pages/ErrorPage"
 
 const App = () => (
