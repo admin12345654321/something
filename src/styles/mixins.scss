@@ -1,5 +1,13 @@
+@import './variables.scss';
+
 @mixin position($pos, $top, $left) {
   position: $pos;
   top: $top;
   left: $left;
+}
+
+@mixin mobile-tablet {
+  @media (max-width: $upToLarge) {
+    @content;
+  }
 }

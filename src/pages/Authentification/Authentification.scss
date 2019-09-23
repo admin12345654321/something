@@ -1,7 +1,7 @@
-@import "../../styles/variables.scss";
-@import "../../styles/mixins.scss";
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
-.auth__btns {
+.auth_btns {
   margin-top: -10rem;
   @include position(absolute, 50%, 50%);
   transform: translate(-50%, -50%);
@@ -22,7 +22,7 @@
     }
 
     &.active {
-      background-color: $hover-blue;
+      background-color: darken($main-blue, 25%);
     }
   }
 

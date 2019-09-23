@@ -1,11 +1,11 @@
-import React from "react"
-import "./SignInUp.scss"
+import React from 'react'
+import './SignInUp.scss'
 
 const SignInUp = ({ isSignedUp }) => (
   <form className='form'>
     <input
-      type='email'
-      placeholder='Email'
+      type='text'
+      placeholder='Name/Email'
       name='name'
       className='input-item'
     />
@@ -15,7 +15,7 @@ const SignInUp = ({ isSignedUp }) => (
       name='password'
       className='input-item'
     />
-    {isSignedUp && (
+    {!isSignedUp && (
       <input
         type='password'
         placeholder='Repeat password'
@@ -24,7 +24,7 @@ const SignInUp = ({ isSignedUp }) => (
       />
     )}
     <button type='button' className='input-btn'>
-      {(isSignedUp && "Sign Up") || "Sign In"}
+      {(isSignedUp && 'Sign In') || 'Sign Up'}
     </button>
   </form>
 )
