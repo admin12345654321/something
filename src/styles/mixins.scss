@@ -6,8 +6,24 @@
   left: $left;
 }
 
-@mixin mobile-tablet {
-  @media (max-width: $upToLarge) {
+@mixin mobile {
+  @media (max-width: $sm) {
     @content;
   }
+}
+
+@mixin tablet {
+  @media (min-width: 576px) and (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 768px) and (max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @content;
 }

@@ -4,6 +4,7 @@
 .layout {
   @include position(relative, 0, 0);
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +18,7 @@
     height: 100%;
     z-index: 1;
     box-shadow: inset 50px 50px 150px #000000, inset -50px -50px 150px #000000;
-    @include mobile-tablet {
+    @include desktop {
       box-shadow: inset 60px 60px 120px #000000, inset -60px -60px 120px #000000;
     }
   }

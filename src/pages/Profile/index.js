@@ -7,7 +7,9 @@ const Profile = () => (
   <Layout>
     <article className='profile'>
       <div className='profile__header'>
-        <h1>Rolf Harris' Profile</h1>
+        <h1>
+          <span>Rolf Harris'</span> Profile
+        </h1>
       </div>
       <div className='profile__info-wrapper'>
         <div className='profile__info-item'>
