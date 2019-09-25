@@ -1,5 +1,6 @@
 import React from 'react'
 import './Profile.scss'
+import profileImg from '../../img/profile-img.jpg'
 
 import Layout from '../../components/Layout'
 
@@ -14,10 +15,7 @@ const Profile = () => (
       <div className='profile__info-wrapper'>
         <div className='profile__info-item'>
           <div className='info-item__img'>
-            <img
-              src='https://randomuser.me/api/portraits/men/18.jpg'
-              alt='profile image'
-            />
+            <img src={profileImg} alt='profile' />
           </div>
           <div className='info-item__icons'>
             <i className='fab fa-linkedin fa-2x'></i>

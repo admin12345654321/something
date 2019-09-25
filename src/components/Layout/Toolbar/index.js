@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import "./Toolbar.scss"
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './Toolbar.scss'
 
 const Toolbar = () => {
   return (
@@ -10,12 +10,13 @@ const Toolbar = () => {
       <ul className='header__nav'>
         <li className='header__nav-item'>
           <Link to='/' className='header__nav-link'>
-            Home
+            <i class='fas fa-home'></i>
+            <span>Home</span>
           </Link>
         </li>
         <li className='header__nav-item'>
           <Link to='/profile' className='header__nav-link'>
-            Profile
+            <i class='fas fa-user'></i> <span>Profile</span>
           </Link>
         </li>
       </ul>

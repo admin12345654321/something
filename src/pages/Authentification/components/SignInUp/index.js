@@ -5,10 +5,18 @@ const SignInUp = ({ isSignedUp }) => (
   <form className='form'>
     <input
       type='text'
-      placeholder='Name/Email'
+      placeholder={isSignedUp ? 'Name/Email' : 'Name'}
       name='name'
       className='input-item'
     />
+    {!isSignedUp && (
+      <input
+        type='email'
+        placeholder='Email'
+        name='email'
+        className='input-item'
+      />
+    )}
     <input
       type='password'
       placeholder='Password'
